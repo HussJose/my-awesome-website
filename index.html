@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Étoile Dorée | Fine Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo">L'Étoile Dorée</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation" class="btn-nav">Book a Table</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">EXPERIENCE FINE DINING</p>
+            <h1>Where Culinary Art Meets Elegance</h1>
+            <a href="#reservation" class="btn-primary">Reserve Experience</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p class="gold-text">Crafting moments since 1924</p>
+                <p>Nestled in the heart of the city, L'Étoile Dorée offers an avant-garde approach to traditional French cuisine. Every dish is a canvas, every flavor a meticulously curated note in a gastronomic symphony.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>The Menu</h2>
+        
+        <div class="menu-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="starters">Starters</button>
+            <button class="filter-btn" data-category="mains">Mains</button>
+            <button class="filter-btn" data-category="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-grid" id="menu-container">
+            </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <div class="reservation-box">
+            <h2>Make A Reservation</h2>
+            <p>Join us for an unforgettable culinary journey.</p>
+            <form id="res-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="2">2 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Confirm Booking</button>
+            </form>
+            <div id="form-response" class="hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 L'Étoile Dorée. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
